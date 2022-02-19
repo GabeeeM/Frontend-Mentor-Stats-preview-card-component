@@ -1,0 +1,108 @@
+$veryDarkBlue: hsl(233, 47%, 7%);
+$darkDesaturatedBlue: hsl(244, 38%, 16%);
+$softViolet: hsl(277, 64%, 61%);
+$white: hsl(0, 0%, 100%);
+$sTWhiteHead: hsla(0, 0%, 100%, 0.75);
+$sTWhiteStat: hsla(0, 0%, 100%, 0.6);
+
+body {
+    height: 100vh;
+    background-color: $veryDarkBlue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+
+    .container {
+        height: 27.94rem;
+        width: 69.56rem;
+        background: url(/images/image-header-desktop.jpg) 35.8125rem;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: $darkDesaturatedBlue;
+        filter: $softViolet;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+
+        .title {
+            margin: 3em 40.5625rem -0.8rem 5rem;
+            text-align: left;
+            font-family: 'Inter', sans-serif;
+            font-size: 1.11rem;
+            color: white;
+
+            span {
+                color: $softViolet;
+            }
+        }
+
+        .text {
+            font-family: 'Inter', sans-serif;
+            color: white;
+            font-size: 0.9rem;
+            margin-left: 5rem;
+            margin-right: 41.5625rem;
+            margin-top: 0rem;
+            line-height: 1.5rem;
+            color: $sTWhiteHead;
+        }
+
+        .stats {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            margin: 3em 40.5625rem -0.8rem 1rem;
+
+            .stat {
+                line-height: 0;
+                color:  $sTWhiteStat;
+
+                h2 {
+                    font-family: 'Lexend Deca', sans-serif;
+                    color: white;
+                }
+
+                p {
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+
+        .container {
+            min-height: 99%;
+            width: 90%;
+            background: url(/images/image-header-mobile.jpg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-color: $darkDesaturatedBlue;
+
+            .title {
+                margin-left: 5%;
+                margin-right: 5%;
+                margin-top: 80%;
+                text-align: center;
+                margin-bottom: 5%;
+            }
+            
+            .text {
+                margin-left: 5%;
+                margin-right: 5%;
+                text-align: center;
+                margin-bottom: 5%;
+            }
+
+            .stats {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: 0rem;
+                margin-bottom: 5%;
+            }
+        }
+    }
+}

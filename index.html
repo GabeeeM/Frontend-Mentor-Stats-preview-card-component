@@ -3,9 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap" rel="stylesheet"> 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="/main.css">
   <title>Frontend Mentor | Stats preview card component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -15,15 +17,31 @@
   </style>
 </head>
 <body>
+  <div class="container">
+    <div class="title">
+      <h1>Get <span class="purple">insights</span> that help your business grow.</h1>
+    </div> <!--/title-->
 
-  Get insights that help your business grow.
+    <div class="text">
+      <p>Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency.</p>
+    </div> <!--/text-->
+    
+    <div class="stats">
+      <div class="stat">
+        <h2>10k+</h2><br><p>COMPANIES</p>
+      </div> <!--/stat-->
 
-  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-  experience, and overall efficiency.
+      <div class="stat">
+        <h2>314</h2><br><p>TEMPLATES</p>
+      </div> <!--/stat-->
 
-  10k+ companies
-  314 templates
-  12m+ queries
+      <div class="stat">
+        <h2>12m+</h2><br><p>QUERIES</p>
+      </div> <!--/stat-->
+
+    </div> <!--/stats-->
+
+  </div> <!--/container-->
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
